@@ -1,0 +1,10 @@
+CREATE TABLE topics (id INTEGER PRIMARY KEY AUTOINCREMENT, code TEXT, topic TEXT, allocated_slots INTEGER);
+
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("A", "Introduction on GW", 5);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("B", "Experimetal GW - Basics", 5);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("C", "Experimetal GW - Advanced", 5);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("D", "Compact Binaries and Cosmology - CBC waveforms", 6);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("E", "Compact Binaries and Cosmology - Populations", 4);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("F", "Parameter Estimation", 4);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("ET", "Einstein Telescope", 1);
+INSERT INTO topics(code, topic, allocated_slots) VALUES ("LISA", "LISA", 1);
