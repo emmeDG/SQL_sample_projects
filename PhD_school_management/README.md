@@ -8,4 +8,4 @@ The folder ’SQL_tables’ contains the SQL source files to create the tables o
 The tables are the following:
 
 * ’proposed_speakers’ in ’tab_proposed_speakers.sq’ - contains the list of all the speakers proposed by the organizers. It includes their ID, complete name, country of origin, and whether they accepted the invite or not;
-** ’speakers’ in ’tab_speakers.sq’ - contains the list of the confirmed speakers. It inlcudes the contribution_id, the id as their unique identifier from the previous table, the title of their contribution, the topic, the number of allocated slots for their contribution, the number of nights that they are expected to stay at the school. 
+* ’speakers’ in ’tab_speakers.sq’ - contains the list of the confirmed speakers. It inlcudes the contribution_id, the id as their unique identifier from the previous table, the title of their contribution, the topic, the number of allocated slots for their contribution, the number of nights that they are expected to stay at the school. 
