@@ -2,7 +2,7 @@ CREATE TABLE proposed_speakers_GGI (id INTEGER PRIMARY KEY AUTOINCREMENT, speake
 
 INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Patricia Schmidt", "UK", " ", "yes", "not yet");
 INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Fulvio Ricci", "IT", "A,B,C", "yes", "yes");
-INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Nils Andersson", "UK", " ", "yes", "not yet");
+INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Nils Andersson", "UK", " ", "yes", "yes");
 INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Geppo Cagnoli", "IT", "A,B,C", "yes", "yes");
 INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Angelique Lartaux", "FR", "B,C", "yes", "no");
 INSERT INTO proposed_speakers_GGI(speaker, country, topic, invited, accepted) VALUES ("Michele Punturo", "IT", "ET", "yes", "yes");
