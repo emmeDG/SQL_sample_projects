@@ -7,9 +7,9 @@ This project should be seen as a sample of my skills with SQL and with the organ
 The folder `SQL_tables` contains the SQL source files to create the tables of the database. The syntax does not include any specific SQL flavour, so it should work with any.
 The tables are the following:
 
-* `proposed_speakers` in `tab_proposed_speakers.sq` - contains the list of all the speakers proposed by the organizers. It includes their ID, complete name, country of origin, and whether they accepted the invite or not;
+*`proposed_speakers` in `tab_proposed_speakers.sq` - contains the list of all the speakers proposed by the organizers. It includes their ID, complete name, country of origin, and whether they accepted the invite or not;
 
-* `speakers` in `tab_speakers.sq` - contains the list of the confirmed speakers. It inlcudes the contribution_id, the id as their unique identifier from the previous table, the title of their contribution, the topic, the number of allocated slots for their contribution, the number of nights that they are expected to stay at the school;
+*`speakers` in `tab_speakers.sq` - contains the list of the confirmed speakers. It inlcudes the contribution_id, the id as their unique identifier from the previous table, the title of their contribution, the topic, the number of allocated slots for their contribution, the number of nights that they are expected to stay at the school;
 
 *`students` in `tab_students.sq` contains the list of the students registered to the school. It includes the student_id, name, last_name, status, affiliation, date of arrival and departure and the total number of nights that they will spend at the school hospitality services;
 
