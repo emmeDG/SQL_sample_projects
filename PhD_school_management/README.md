@@ -21,6 +21,6 @@ The tables are the following:
 
 ## DISCLAIMER
 
-The goal of this repository HAS NOT the scope of representing a realistic school.
+This repository HAS NOT the scope of representing a realistic school.
 Prices, names and organization are completely arbitrary.
 This repository has the unique goal of showing my SQL skills off.
