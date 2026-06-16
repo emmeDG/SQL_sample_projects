@@ -1,0 +1,10 @@
+CREATE TABLE speakers (contribution_id INTEGER PRIMARY KEY AUTOINCREMENT, speaker_id INTEGER NOT NULL, contr_title TEXT, topic TEXT, number_slots INTEGER, n_nights_stay INTEGER, FOREIGN KEY (speaker_id) REFERENCES proposed_speakers_GGI(id));
+
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Fulvio Ricci"), "Introduction to GW detectors", "B", 3,4);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Geppo Cagnoli"),"GW interferometers - Yesterday and Today", "B", 3,4);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Valeria Sequino"),"Quantum Squeezing for GW ITF", "C", 1,1);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Julia Casanueva Diaz"),"Control and Operations of a GW detector", "C", 1,0);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Giovanni Losurdo"),"Seismic isolation of Test masses" ,"C", 1,0);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Michele Punturo"),"Towards the 3rd generation GW detector Einstein Telescope" ,"ET", 1,1);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Nora Lutgendorf"),"The Laser Interferometer Space Antenna - Status and plans" ,"LISA", 1,1);
+INSERT INTO speakers(speaker_id, contr_title, topic, number_slots, n_nights_stay) VALUES ((SELECT id FROM proposed_speakers_GGI WHERE speaker = "Nils Andersson"),"The basics of GW theory" ,"D", 1,1);
