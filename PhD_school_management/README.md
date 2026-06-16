@@ -18,3 +18,9 @@ The tables are the following:
 *`topics` in `tab_topic_list.sq` - contains the list of the topics which are expected to be covered by the school;
 
 *`costs` in `tab_costs.sq` - contains a list of the per capita costs foreseen for each service to establish the total cost of the school through queries.
+
+## DISCLAIMER
+
+The goal of this repository HAS NOT the scope of representing a realistic school.
+Prices, names and organization are completely arbitrary.
+This repository has the unique goal of showing my SQL skills off.
