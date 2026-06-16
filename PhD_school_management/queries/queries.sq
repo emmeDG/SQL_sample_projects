@@ -1,0 +1,15 @@
+/**
+Display the total daily cost for meals for the students participating to the school grouped by dietary requirements, including number of students.
+**/
+SELECT 
+    dietary_requirements,
+    COUNT(student_id) AS tot_num,
+    CASE 
+        WHEN dietary_requirements = "none" THEN ROUND(COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Standard Breakfast")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Standard Lunch")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Standard Dinner")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Coffee breaks")*2,1)
+        WHEN dietary_requirements = "vegan" OR dietary_requirements = 'vegetarian' THEN ROUND(COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Vegan Breakfast")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Vegan Lunch")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Vegan Dinner")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Coffee breaks")*2,1)
+        WHEN dietary_requirements NOT IN ('none','vegan','vegetarian') OR dietary_requirements = 'vegetarian' THEN ROUND(COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Allergen free Breakfast")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Allergen free Lunch")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Allergen free Dinner")+COUNT(student_id)*(SELECT price_per_capita FROM costs WHERE name = "Coffee breaks")*2,1)
+        ELSE "below target"
+    END AS meal_daily_cost
+    FROM student_details 
+GROUP BY dietary_requirements
+ORDER BY meal_daily_cost DESC;
